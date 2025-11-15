@@ -1,0 +1,5 @@
+{
+  "name": "FIMATHE Day Trade Dashboard",
+  "description": "A professional, automated dashboard for day trading based on the FIMATHE method. It helps traders manage configurations, calculate levels, log trades, and analyze performance with a clean and intuitive interface.",
+  "requestFramePermissions": []
+}
