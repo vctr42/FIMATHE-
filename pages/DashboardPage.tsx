@@ -1,8 +1,7 @@
-
 import React, { useMemo } from 'react';
 import { useData } from '../contexts/DataContext';
 import { Card } from '../components/Card';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, Cell } from 'recharts';
 import { DollarSign, Percent, Target, TrendingUp, TrendingDown, ListChecks } from 'lucide-react';
 import { Trade, TradeStatus } from '../types';
 
@@ -96,7 +95,7 @@ export const DashboardPage: React.FC = () => {
                 <Tooltip />
                 <Bar dataKey="count" name="Trades">
                     {metrics.rDistribution.map((entry, index) => (
-                        <Bar key={`cell-${index}`} fill={entry.r >= 0 ? '#10b981' : '#ef4444'} />
+                        <Cell key={`cell-${index}`} fill={entry.r >= 0 ? '#10b981' : '#ef4444'} />
                     ))}
                 </Bar>
             </BarChart>
